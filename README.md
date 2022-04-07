@@ -2,8 +2,8 @@
 用python制作带图形界面的 .exe
 ## 模块版本
 altgraph                  0.17.2
--future                    0.18.2
--numpy                     1.22.3
+- future                    0.18.2
+- numpy                     1.22.3
 -pandas                    1.4.2
 -pefile                    2021.9.3
 -pip                       22.0.4
