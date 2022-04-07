@@ -29,7 +29,7 @@ wheel                     0.37.1
 - pyinstaller -F -w xxx.py (-F可不加，这样打开.exe会快一点。-w是去掉命令窗口）
 
 ## 图形界面
-这部分主要是设置图形界面大小，控件位置等等
+这部分代码主要是设置图形界面大小，控件位置等等
 
 ```python
 class GUI:
@@ -68,5 +68,6 @@ class GUI:
         self.label1.grid(row=0) 
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
 ```
-
+## 备注
 ![image](https://github.com/myy258/make-an-.exe-by-python/blob/main/Screenshot%202022-04-07%20134311.png)
+该脚本只是本人练习使用，功能比较简陋。
