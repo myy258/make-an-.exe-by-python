@@ -37,11 +37,6 @@ class TranslateGUI:
         self.clear.grid(row=5, column=0, sticky=E, padx=5, pady=2)
         self.label1.grid(row=0) 
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
-        # self.entry.pack(expand=YES, side='left', fill='both')
-        # self.result_button1.pack(expand=YES, side='top', fill='both')
-        # self.result_button2.pack(expand=YES, side='bottom', fill='both')
-        # self.result.pack(expand=YES, side='right', fill='both')
-
 
 class InputPath:
     def __init__(self):
