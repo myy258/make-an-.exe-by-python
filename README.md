@@ -18,8 +18,12 @@ wheel                     0.37.1
 
 本人用的是虚拟环境打包，所以python比较干净，部分包需要下载。
 
-## 下载说明
-pip install pyinstall  
-pip install pipenv  
+## 下载和打包说明
+
+#### 下载必须的包
+- pip install pyinstall  
+- pip install pipenv  
 #### 启用虚拟环境
-pipenv install
+- pipenv install
+#### 进入虚拟环境
+- pipenv shell
