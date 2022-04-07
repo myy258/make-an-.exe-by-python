@@ -29,3 +29,43 @@ wheel                     0.37.1
 - pipenv shell
 #### 4.打包你的程序
 - pyinstaller -F -w xxx.py (-F可不加，这样打开.exe会快一点。-w是去掉命令窗口）
+
+## 图形界面
+这部分主要是设置图形界面大小，控件位置等等
+
+```python
+class GUI:
+    def __init__(self):
+        # 创建窗口
+        self.root = Tk()
+        # 标题
+        self.root.title('Run')
+        # 窗口大小
+        self.root.geometry("500x200")
+        # 窗口位置
+        self.root.geometry("+300+200")
+
+        self.entry = Entry(self.root, width=60)
+        self.result = Text(self.root, width=45, height=5)
+        self.result_button1 = Button(self.root, text='Run', command=self.find1, width=10, height=1)
+        self.label1 = Label(self.root, text="Input Path")
+        self.label2 = Label(self.root, text="Remark:Input Path must be a path like D:/file/test.csv",font=18,bg='red') 
+        self.quit_button = Button(self.root, text='Quit', command=self.root.destroy, width=10, height=1)
+        self.clear = Button(self.root, text='delete', command=self.clear, width=10, height=1)
+                
+    def clear(self):
+        for _ in range(100):
+            self.result.delete(1.0)
+                     
+    def find1(self):
+        self.result.insert(END, InputPath().getresult(self.entry.get()))
+
+    def gui_arrang(self):
+        
+        self.entry.grid(rowspan=1, row=0, column=1, sticky=E, padx=20,pady=5)
+        self.result_button1.grid(row=3, column=0, sticky=E, padx=5,pady=2)
+        self.result.grid(rowspan=8, row=2, column=1)
+        self.quit_button.grid(row=4, column=0,sticky=E, padx=5, pady=2)
+        self.clear.grid(row=5, column=0, sticky=E, padx=5, pady=2)
+        self.label1.grid(row=0) 
+        self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
