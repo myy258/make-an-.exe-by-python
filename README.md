@@ -69,4 +69,4 @@ class GUI:
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
 ```
 
-![image]https://github.com/myy258/make-an-.exe-by-python/blob/main/Screenshot%202022-04-07%20134311.png
+![image](https://github.com/myy258/make-an-.exe-by-python/blob/main/Screenshot%202022-04-07%20134311.png)
