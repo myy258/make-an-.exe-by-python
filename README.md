@@ -19,7 +19,7 @@ wheel                     0.37.1
 ## 下载和打包说明
 
 #### 1.下载必须的包
-- pip install pyinstall  
+- pip install pyinstaller   
 - pip install pipenv  
 #### 2.启用虚拟环境
 - pipenv install
