@@ -69,5 +69,5 @@ class GUI:
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
 ```
 ## 备注
-![image](https://github.com/myy258/make-an-.exe-by-python/blob/main/Screenshot%202022-04-07%20134311.png)
+![image](https://github.com/myy258/make-an-.exe-by-python/blob/main/Screenshot%202022-04-07%20134311.png)  
 该脚本只是本人练习使用，功能比较简陋。
