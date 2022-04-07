@@ -51,11 +51,6 @@ class GUI:
         self.label1.grid(row=0, padx=5, pady=5) 
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
         self.select_button.grid(row=0, column=2, padx=1, pady=1)
-        # self.entry.pack(expand=YES, side='left', fill='both')
-        # self.result_button1.pack(expand=YES, side='top', fill='both')
-        # self.result_button2.pack(expand=YES, side='bottom', fill='both')
-        # self.result.pack(expand=YES, side='right', fill='both')
-
 
 class InputPath:
     def __init__(self):
