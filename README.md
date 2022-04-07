@@ -1,5 +1,3 @@
-# make-an-.exe-by-python
-用python制作带图形界面的 .exe
 ## 模块版本
 altgraph                  0.17.2  
 future                    0.18.2  
@@ -69,3 +67,5 @@ class GUI:
         self.clear.grid(row=5, column=0, sticky=E, padx=5, pady=2)
         self.label1.grid(row=0) 
         self.label2.grid(row=20, column=1, sticky=W, padx=5, pady=2)
+```
+
